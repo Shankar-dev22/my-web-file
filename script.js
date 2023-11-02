@@ -1,3 +1,10 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
+
+
 function imagecontainer(){
     var imgbook = document.querySelector("#main-Book-img")
 var playbtn = document.querySelector("#play-btn")

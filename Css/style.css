@@ -1,26 +1,31 @@
+@font-face {
+    font-family: futura;
+    src: url("../fonts/Futura-Bold.woff2");
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: gillroy;
+    font-family: futura;
 }
-*::selection{
+
+*::selection {
     color: #fff;
     background: #000;
 }
+
 body,
 html {
     width: 100%;
     height: 100%;
 }
-#main{
+
+#main {
     width: 100%;
 }
 
 #page1 {
     width: 100%;
-    height: 100vh;
-    position: relative;
 }
 
 #page1 h1 {
@@ -36,23 +41,24 @@ html {
 
 #main-Book-img {
     width: 100%;
-    min-height: 100vh;
+    position: relative;
 }
 
 #main-Book-img img {
     width: 100%;
-    }
+}
 
 #play-btn {
     background: #000;
     position: fixed;
-   color:#fff;
-   padding: 4vh 3vh;
-   border-radius: 50%;
-   opacity: 0;
-   scale: 0;
+    color: #fff;
+    padding: 4vh 3vh;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
 }
-#play-btn h3{
+
+#play-btn h3 {
     color: #fff;
     font-family: futura;
     text-transform: uppercase;
@@ -61,9 +67,175 @@ html {
 
 /* page2 Start here */
 
-#page2{
+#page2 {
     width: 100%;
-    background: #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 2vh;
+    flex-wrap: wrap;
     position: relative;
+}
+
+#page2 .elem {
+    width: 32%;
     height: 100vh;
+    position: relative;
+
+}
+
+#page2 .elem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#hr-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2vh;
+    border-bottom: 1px solid #000;
+
+
+}
+
+#hr-line h5 {
+    color: #000;
+    font-weight: 300;
+    font-family: arial;
+
+}
+
+.elem .dets {
+    width: 70%;
+    height: 50px;
+    background: #E5F0D6;
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    border-radius: 60px;
+    transform: translate(50% 50%);
+}
+
+#page3 {
+    position: relative;
+    padding: 3vh 2vh;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.child {
+    height: 100vh;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.child img {
+    width: 100%;
+    height: 80%;
+
+}
+
+.child .rate h5 {
+    font-family: futura;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.child h6 {
+    font-family: futura;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* --------page 4 ------ */
+
+#page4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 2vh;
+}
+#page4 .believe-popl{
+    padding-right: 120px;
+}
+
+#page4 .believe-popl h1{
+    font-size: 56px;
+    font-family: futura;
+    font-weight: 900;
+    line-height: 50px;
+}
+/* @media screen start heere  */
+
+
+@media (320px <=width <=840px) {
+
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    #page1 h1 {
+        margin-top: 2px;
+        width: 100%;
+        margin-bottom: 1px;
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    #main-Book-img {
+        padding: 30px 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    #main-Book-img img {
+        width: 100%;
+
+    }
+
+    #page2 {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 3vh 2vh;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    #page2 .elem {
+        width: 100%;
+        height: auto;
+
+    }
+
+    #page2 .elem {
+        width: 100%;
+
+    }
+
 }
